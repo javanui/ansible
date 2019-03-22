@@ -1,5 +1,6 @@
 ---
-- hosts: database
+- hosts: 192.168.135.121
+  become: true
   tasks:
     - name: install mysql-server
       apt: name=mysql-server state=present update_cache=yes
