@@ -1,6 +1,6 @@
 ---
 - hosts: webservers
-  become:true
+  become: true
   tasks:
     - name: install apache2
       apt: name={{item}} state=present update_cache=yes
